@@ -1,0 +1,288 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0rem 10rem 0rem 10rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+button {
+  padding: 10px;
+  width: 200px;
+  background: #6f4e37;
+  outline: none;
+  border: #6f4e37;
+  font-weight: 800;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 8.68rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+button:hover {
+  color: #fff;
+  transform: translateY(-7px);
+}
+.text {
+  margin: 0 auto;
+}
+.text h1 {
+  text-align: center;
+  color: white;
+  width: 450px;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+/*site-info css*/
+.site-info,
+.menu {
+  background: rgb(234, 231, 222);
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+}
+.main {
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+.site-info .map .menu {
+  display: flex;
+  margin-top: 20px;
+}
+.shop-details {
+  display: flex;
+  padding: 3rem 10rem 0rem 10rem;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.menu-details {
+  width: 50%;
+  margin: 0 auto;
+}
+.opening-hours {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-top: 15px solid #6f4e37;
+}
+.schedule {
+  display: flex;
+  font-weight: 400;
+}
+
+hr {
+  width: 15.6vw;
+  display: flex;
+  margin: 1rem;
+}
+.contact {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2.8rem;
+  border-bottom: 15px solid #6f4e37;
+  flex-wrap: wrap;
+}
+.seperator {
+  width: 100px;
+  background: #6f4e37;
+  border: #6f4e37;
+  height: 5px;
+  display: flex;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+.contact-details h3 {
+  word-wrap: break-word;
+  margin-bottom: 30px;
+}
+.contact-details h3 span {
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  color: #363f41;
+}
+/*Brewers*/
+
+.brewers {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 10rem 2.8rem 10rem;
+  background: rgb(248, 246, 238);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.brewers-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+
+/*Gallery*/
+
+.gallery {
+  background: rgb(233, 229, 213);
+  padding: 0rem 10rem 2.8rem 10rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.image-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.image-grid .image-item:nth-child(4n) {
+  grid-column-end: span 3;
+}
+
+.image-grid img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Menu*/
+.menu {
+  background: rgb(234, 231, 222);
+  padding-bottom: 20px;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 10rem 2.8rem 10rem;
+  background: rgb(233, 229, 213);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+form button {
+  margin: 0 auto;
+  background: #6f4e37;
+}
+
+input {
+  padding: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-bottom: 40px;
+  transform: scaleX(1);
+  transition: transform 0.5s;
+}
+input:focus {
+  outline: none;
+  border-bottom: 1px solid #6f4e37;
+  transform: scaleX(1);
+}
+.footer {
+  background: #6f4e37;
+  display: grid;
+}
+footer {
+  color: #fff;
+  display: flex;
+  margin-top: 80px;
+  padding: 0rem 10rem 2.8rem 10rem;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  margin: 0 auto;
+  color: white;
+  padding-bottom: 2rem;
+}
+a {
+  text-decoration: none;
+  color: cornsilk;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #6f4e37;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #6f4e37;
+  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  .text {
+    width: 100%;
+  }
+  .hero,
+  .site-info,
+  .brewers,
+  .gallery,
+  .menu,
+  footer,
+  .signup,
+  .copyright {
+    padding: 0rem 1rem 0rem 1rem;
+  }
+  .shop-details,
+  .menu-details {
+    padding: 3rem 0rem 0rem 0rem;
+  }
+  .opening-hours,
+  form {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .contact,
+  .menu-details {
+    width: 100%;
+  }
+  .text h1 {
+    padding: 5rem 0rem;
+    width: 100%;
+  }
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+  .image-grid .image-item:nth-child(4n) {
+    grid-column-end: span 1;
+  }
+  .image-grid img {
+    width: 100%;
+  }
+  .schedule {
+    width: 100%;
+  }
+  .footer-contact,
+  .social {
+    padding-bottom: 3rem;
+  }
+}
